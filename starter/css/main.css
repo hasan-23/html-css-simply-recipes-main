@@ -404,13 +404,42 @@ Footer
   border-radius: var(--borderRadius);
   position: relative;
 }
-.hro-container {
+.hero-container {
   position: absolute;
   width: 100%;
   height:100%;
   top: 0;
   left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.hero-text {
+  text-align: center;
+  color: var(--white);
+}
+@media screen and (min-width:768px) {
+  .hero-text h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+  } 
+} 
+/*
+===============
+
+===============
+*/
+.recipes-container {
+  display: grid;
+  gap: 2rem 1rem;
+  border: 2px solid red;
+}
+.tags-container {
+  border: 2px solid blue; 
+}
+
 /*
 ===============
 
